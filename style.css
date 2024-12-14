@@ -132,6 +132,82 @@ html,body{
       rgba(255, 255, 255, 0)
     );
   }
+
+
+  .faq-container {
+    max-width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    gap: 20px;
+  }
+  
+  .faq-item {
+    background-color: #FBFBFF;
+    border-radius: 15px;
+    padding: 0 30px;
+    border: 1px solid #ddeffb;
+    overflow: hidden;
+    width: 100%;
+    transition: height 0.5s ease;
+  }
+  
+  .faq-question {
+    color: #000000c0;
+    font-family: "Bricolage Grotesque", sans-serif;
+    width: 100%;
+    padding: 15px 0;
+    text-align: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    transition: max-height 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+  }
+  
+  .faq-answer p {
+    padding: 15px 0;
+    color: #00000084;
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .faq-item.active .faq-answer {
+    max-height: 800px; /* Adjust based on content length */
+  }
+  
+  .cross {
+    transition: transform 0.5s ease;
+    min-width: 25px;
+    min-height: 25px;
+  }
+  
+  .faq-item.active .cross {
+    transform: rotate(180deg);
+  }
+
+  
+  @media (max-width:1023px) {
+    .slider-content img {
+        width: 150px;
+        height: 100%;
+      }
+
+      .slider-content{
+        gap: 50px;
+      }
+  }
   
 
   /* Keyframes for the desktop scroll animation */
