@@ -72,17 +72,19 @@
           </h2>
           <form
             id="contact-form"
-            action=""
-            method="POST"
+            action="https://api.web3forms.com/submit" method="POST"
             class="w-full bg-white rounded-md p-5"
           >
+          <input type="hidden" name="access_key" value="5c89fcec-db9e-49fe-bcf2-6191db13cba6">
+
             <div class="form-group">
-              <input type="text" name="Full Name" placeholder=" " required />
+              <input type="text" aria-label="Full Name" name="Full Name" placeholder=" " required />
               <label for="Full Name">Full Name</label>
             </div>
 
             <div class="form-group">
               <input
+              aria-label="Email"
                 type="email"
                 id="Email"
                 name="Email"
@@ -94,6 +96,7 @@
 
             <div class="form-group">
               <input
+              aria-label="Phone Number"
                 type="tel"
                 id="Phone Number"
                 name="Phone Number"
@@ -110,6 +113,7 @@
               <div class="flex flex-col gap-3 mt-5">
                 <div class="flex items-center gap-2 justify-start">
                   <input
+                  aria-label="Yes"
                     type="radio"
                     name="choice"
                     class="w-fit scale-125"
@@ -119,6 +123,7 @@
                 </div>
                 <div class="flex items-center gap-2 justify-start">
                   <input
+                  aria-label="No"
                     type="radio"
                     name="choice"
                     class="w-fit scale-125"
@@ -128,6 +133,8 @@
                 </div>
                 <div class="flex items-center gap-2 justify-start">
                   <input
+                  aria-label="Sometimes"
+
                     type="radio"
                     name="choice"
                     class="w-fit scale-125"
