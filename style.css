@@ -145,32 +145,6 @@ input:not(:placeholder-shown) + label {
   border-radius: 10px;
 }
 
-.fade {
-  position: absolute;
-  bottom: 0;
-  width: 30px; /* Width of the fade */
-  height: 400px;
-  pointer-events: none;
-}
-
-.fade-left {
-  left: 0;
-  z-index: 10;
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
-}
-
-.fade-right {
-  right: 0;
-  background: linear-gradient(
-    to left,
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
-}
 
 .review-slider {
   margin: 90px auto;
