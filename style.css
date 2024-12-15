@@ -174,7 +174,6 @@ input:not(:placeholder-shown) + label {
 
 .review-slider {
   margin: 90px auto;
-  overflow: hidden;
 }
 
 /* Keyframes for the desktop scroll animation */
@@ -208,12 +207,11 @@ input:not(:placeholder-shown) + label {
     width: 250px;
   }
   .review-slider {
-    width: max-content;
+    overflow: hidden;
     margin: 60px 0;
   }
 
   .testimonial-container {
-    width: calc(250px * 6 * 2 + 15px * 11); /* Adjusted width for mobile */
     animation: scroll 30s linear infinite; /* Same infinite scroll */
   }
 }
