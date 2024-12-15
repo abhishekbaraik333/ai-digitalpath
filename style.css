@@ -147,6 +147,7 @@ input:not(:placeholder-shown) + label {
 
 
 .review-slider {
+  overflow: hidden;
   margin: 90px auto;
 }
 
@@ -181,7 +182,6 @@ input:not(:placeholder-shown) + label {
     width: 250px;
   }
   .review-slider {
-    overflow: hidden;
     margin: 60px 0;
   }
 
